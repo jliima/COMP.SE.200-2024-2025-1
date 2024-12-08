@@ -1,8 +1,6 @@
 import { expect } from 'chai'
 import add from "../src/add.js";
 
-const defaultValue = 0
-
 describe('add', () => {
   describe('happy cases', () => {
     it('should add two positive numbers', () => {
@@ -22,4 +20,5 @@ describe('add', () => {
     })
   })
 
+  // TODO add test cases for undefined functionality.
 })

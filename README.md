@@ -12,5 +12,5 @@ Purpose of this repository is to implement tests described in separate document 
 - isDate.js
 - isEmpty.js
 - map.js
-- memorize.js
+- memoize.js
 - reduce.js
