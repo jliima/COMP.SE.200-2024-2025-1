@@ -27,10 +27,16 @@ describe('get', () => {
   })
 
   describe('unhappy cases', () => {
-    it('should return undefined if given path is something else than Array|string', () => {
+    it('should return undefined if object is null or undefined', () => {
+      expect(get(null, 'a[0].b.c',)).to.be.undefined
+      expect(get(undefined, 'a[0].b.c',)).to.be.undefined
+    })
+
+    it('should return undefined if path is something else than Array|string', () => {
       expect(get(object, 2)).to.be.undefined
       expect(get(object, undefined)).to.be.undefined
       expect(get(object, { a: 2})).to.be.undefined
+      expect(get(object, null)).to.be.undefined
     })
   })
 
